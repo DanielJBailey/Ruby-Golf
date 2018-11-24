@@ -126,7 +126,22 @@ end
 # print “BUZZ” if the number is divisible by 5,
 # “FIZZBUZZ” if the number is divisible by both 3 and 5
 # otherwise print the number
+
+def fizz_buzz
+    (1..100).each do |number|
+        if number % 3 == 0 && number % 5 == 0
+            puts "FIZZBUZZ"
+        elsif number % 5 == 0
+            puts "BUZZ"
+        elsif number % 3 == 0
+            puts "FIZZ"
+        else
+            puts number
+        end
+    end
+end
  
+fizz_buzz
 
 # HOLE 4: Multiples up to a given value
 # The method takes in a number and a max value
