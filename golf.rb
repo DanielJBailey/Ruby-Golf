@@ -118,8 +118,6 @@ end
 #rock_paper_scissors
 
 
-
-
 # HOLE 3: FIZZBUZZ
 #  For numbers 1-100
 # print “FIZZ” if the number is divisible by 3,
@@ -141,11 +139,22 @@ def fizz_buzz
     end
 end
  
-fizz_buzz
+#fizz_buzz
 
 # HOLE 4: Multiples up to a given value
 # The method takes in a number and a max value
 # Finds all multiples of the number up to the max value.
+
+
+def multiples(n, max)
+    multiples = []
+    (n..max).select do |i|
+        i % n == 0 ? multiples.push(i) : nil
+    end
+    puts multiples
+end
+
+#multiples(10,100)
  
 
 # HOLE 5: Caesar Cipher
@@ -154,10 +163,11 @@ fizz_buzz
 # Return the encrypted string
 # (e.g “ab”, 3 would return “de”).
 # When you hit Z loop back to A.
+
+
+
 # HOLE 6: String Counter
-
 # Given a string and a sub string
-
 # Count the number of times the substring occurs in the string
 # Print the number to the console
  
